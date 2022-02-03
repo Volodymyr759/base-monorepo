@@ -19,7 +19,9 @@
   "workspaces": [
     "./packages/*",
     "./clients/*",
-    "./clients/admin/*"
+    "./clients/admin/*",
+    "./clients/agent/*",
+    "./clients/tenant/*"
   ],
   "dependencies": {
     "express": "^4.17.2",
