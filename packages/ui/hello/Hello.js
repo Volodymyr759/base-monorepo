@@ -1,7 +1,9 @@
-export const Hello = () => {
+ import React from "react";
+ 
+ const Hello = () => {
     return (
-      <div className="App">
-        <h1> Hello, Admin. </h1>
-      </div>
+      <span>Hello</span>
     );
   }
+
+  export default Hello

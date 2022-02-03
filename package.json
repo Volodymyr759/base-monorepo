@@ -9,16 +9,17 @@
     "admin-client": "npm run start --prefix clients/admin",
     "agent-client": "npm run start --prefix clients/agent",
     "tenant-client": "npm run start --prefix clients/tenant",
-    "admin-dev": "concurrently \"npm run server\" \"npm run admin-client\"",
+    "admin-dev": "concurrently \"npm run server\" \"npm run admin-client --watch\"",
     "agent-dev": "concurrently \"npm run server\" \"npm run agent-client\"",
     "tenant-dev": "concurrently \"npm run server\" \"npm run tenant-client\""
   },
-  "author": "Shreck",
+  "author": "Shrek",
   "license": "ISC",
   "private": true,
   "workspaces": [
     "./packages/*",
-    "./clients/*"
+    "./clients/*",
+    "./clients/admin/*"
   ],
   "dependencies": {
     "express": "^4.17.2",
