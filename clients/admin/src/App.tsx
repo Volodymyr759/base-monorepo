@@ -1,7 +1,7 @@
 import React from 'react';
 //@ts-ignore
 // import { Hello } from '@monorepo/ui';
-import Hello from '@monorepo/ps-ui-toolkit';
+import { Hello } from '@monorepo/ps-ui-toolkit';
 
 function App() {
   return (

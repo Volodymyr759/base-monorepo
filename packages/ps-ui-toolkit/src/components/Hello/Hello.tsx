@@ -1,8 +1,9 @@
 import React from 'react';
+import './hello.css';
 
 const Hello = () => {
     return (
-        <span>Hello</span>
+        <span className='hello'>Hello</span>
     );
 };
 

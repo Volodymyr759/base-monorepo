@@ -8,10 +8,14 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
                 test: /\.(js|jsx|ts|tsx)$/,
                 exclude: /node_modules/,
                 loader: "babel-loader",
-                options: { presets: ['@babel/env','@babel/preset-react'] }
+                options: { presets: ['@babel/env', '@babel/preset-react'] }
             },
         ],
     },
